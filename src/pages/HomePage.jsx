@@ -1,9 +1,14 @@
 import React from 'react'
+import FeaturedProducts from '../components/home/FeaturedProducts'
+import Categories from '../components/home/Categories'
+import Collection from '../components/home/Collection'
 
 const HomePage = () => {
   return (
     <>
-      <h1 className="animate__animated animate__bounce">This is Homepage</h1>
+      <FeaturedProducts />
+      <Collection />
+      <Categories />
     </>
   )
 }
