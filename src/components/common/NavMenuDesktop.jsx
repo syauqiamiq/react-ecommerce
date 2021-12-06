@@ -1,17 +1,38 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Navbar, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
+import MegaMenuAll from "../home/MegaMenuAll";
 
 const NavMenuDesktop = () => {
+  const [nav, setNav] = useState("sideNavClose");
+  const [overlay, setOverlay] = useState("ContentOverlayClose");
+
+  const overlayClickHandler = () => {
+    navHandler();
+  };
+
+  const navHandler = () => {
+    if (nav === "sideNavClose") {
+      setNav("sideNavOpen");
+      setOverlay("ContentOverlayOpen");
+    }
+    if (nav === "sideNavOpen") {
+      setNav("sideNavClose");
+      setOverlay("ContentOverlayClose");
+    }
+  };
   return (
     <>
       <div className="TopSectionDown">
         <Navbar className="navbar" fixed={"top"} bg="light">
-          <Container fluid className="fixed-top shadow-sm mb-0 p-2 bg-white">
+          <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
             <Row>
               <Col lg={4} md={4} sm={12} xs={12}>
+                <Button onClick={navHandler} className="btn">
+                  <i className="fa fa-bars"></i>
+                </Button>
                 <Link to="/">
                   {" "}
                   <img className="nav-logo" src={Logo} />{" "}
@@ -49,6 +70,10 @@ const NavMenuDesktop = () => {
           </Container>
         </Navbar>
       </div>
+      <div className={nav}>
+        <MegaMenuAll />
+      </div>
+      <div className={overlay} onClick={overlayClickHandler}></div>
     </>
   );
 };
