@@ -3,16 +3,16 @@ import Categories from "../components/home/Categories";
 import Collection from "../components/home/Collection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import NewArrival from "../components/home/NewArrival";
-import Layout from "./Layout";
+import HomeLayout from "./HomeLayout";
 
 const HomePage = () => {
   return (
-    <Layout>
+    <HomeLayout>
       <FeaturedProducts />
       <NewArrival />
       <Categories />
       <Collection />
-    </Layout>
+    </HomeLayout>
   );
 };
 
