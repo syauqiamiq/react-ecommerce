@@ -1,20 +1,22 @@
-import React from 'react'
-import FeaturedProducts from '../components/home/FeaturedProducts'
-import Categories from '../components/home/Categories'
-import Collection from '../components/home/Collection'
-import NewArrival from '../components/home/NewArrival'
-import HomeTop from '../components/home/HomeTop'
+import React from "react";
+import FeaturedProducts from "../components/home/FeaturedProducts";
+import Categories from "../components/home/Categories";
+import Collection from "../components/home/Collection";
+import NewArrival from "../components/home/NewArrival";
+import HomeTop from "../components/home/HomeTop";
+import NavMenuDesktop from "../components/common/NavMenuDesktop";
 
 const HomePage = () => {
   return (
     <>
-      <HomeTop/>
+      <NavMenuDesktop />
+      <HomeTop />
       <FeaturedProducts />
-      <NewArrival/>
-      <Collection />
+      <NewArrival />
       <Categories />
+      <Collection />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
