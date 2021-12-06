@@ -64,7 +64,7 @@ const NavMenuDesktop = () => {
                 <a href="#home" className="btn">
                   <i className="fa h4 fa-mobile-alt"></i>
                 </a>
-                <Link to="/" className="h4 btn">
+                <Link to="/login" className="h4 btn">
                   LOGIN
                 </Link>
 
