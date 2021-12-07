@@ -2,13 +2,13 @@ import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const FeaturedProducts = () => {
+const SuggestedProduct = () => {
   return (
     <>
       <Container className="text-center" fluid>
         <div className="section-title text-center mb-55">
-          <h2>FEATURED PRODUCT</h2>
-          <p>Beberapa Koleksi Kami, Yang Mungkin Anda Suka</p>
+          <h2>SUGGESTED PRODUCT</h2>
+          <p>Beberapa Saran Produk Dari Kami, Yang Mungkin Anda Suka</p>
         </div>
         <Row>
           {[1, 2, 3, 4, 5, 6, 7, 8].map((res, index) => (
@@ -30,4 +30,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default SuggestedProduct;

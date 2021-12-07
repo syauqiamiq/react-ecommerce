@@ -28,7 +28,7 @@ const Contact = () => {
                   width="630"
                   height="450"
                   styles="border:0;"
-                  allowfullscreen=""
+                  allowFullScreen={true}
                   loading="lazy"
                 ></iframe>
               </Col>
