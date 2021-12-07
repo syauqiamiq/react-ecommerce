@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
+import NotificationPage from "../pages/NotificationPage";
 import PrivacyPage from "../pages/PrivacyPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import PurchasePage from "../pages/PurchasePage";
@@ -20,6 +21,7 @@ const AppRoute = () => {
         <Route path="/refund" element={<RefundPage />} />
 
         <Route path="/productdetails" element={<ProductDetailPage />} />
+        <Route path="/notification" element={<NotificationPage />} />
       </Routes>
     </>
   );
