@@ -4,6 +4,7 @@ import { Col, Container, Navbar, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import MegaMenuAll from "../home/MegaMenuAll";
+import Bars from "../../assets/images/bars.png";
 
 const NavMenuDesktop = () => {
   const [nav, setNav] = useState("sideNavClose");
@@ -30,9 +31,7 @@ const NavMenuDesktop = () => {
           <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
             <Row>
               <Col lg={4} md={4} sm={12} xs={12}>
-                <Button onClick={navHandler} className="btn">
-                  <i className="fa fa-bars"></i>
-                </Button>
+                <img src={Bars} alt="" onClick={navHandler} className="bar-img" />
                 <Link to="/">
                   {" "}
                   <img className="nav-logo" src={Logo} />{" "}
@@ -49,7 +48,7 @@ const NavMenuDesktop = () => {
               </Col>
 
               <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
-                <Link to="/" className="btn">
+                <Link to="/favourite" className="btn">
                   <i className="fa h4 fa-heart"></i>
                   <sup>
                     <span className="badge text-white bg-danger">5</span>

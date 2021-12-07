@@ -69,10 +69,12 @@ const FooterDesktop = () => {
               <a>
                 <img src={Apple} alt="apple"></img>
               </a>
-
               <a>
                 <img className="mt-2" src={Google} alt="google"></img>
               </a>
+              <br></br>
+              Change Your Language <br></br>
+              <div id="google_translate_element"> </div>
             </Col>
           </Row>
         </Container>
