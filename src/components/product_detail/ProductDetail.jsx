@@ -119,7 +119,7 @@ const ProductDetail = () => {
               <Col className="" md={6} lg={6} sm={12} xs={12}>
                 <h6 className="mt-2">REVIEWS</h6>
                 <p className=" p-0 m-0">
-                  <span className="Review-Title">Kazi Ariyan</span>{" "}
+                  <span className="Review-Title">Syauqi Amiq</span>{" "}
                   <span className="text-success">
                     <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i>{" "}
                   </span>{" "}
