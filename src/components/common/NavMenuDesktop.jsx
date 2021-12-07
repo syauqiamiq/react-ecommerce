@@ -67,9 +67,9 @@ const NavMenuDesktop = () => {
                   LOGIN
                 </Link>
 
-                <Button className="cart-btn">
+                <Link to="/cart" className="cart-btn">
                   <i className="fa fa-shopping-cart"></i> 3 Items{" "}
-                </Button>
+                </Link>
               </Col>
             </Row>
           </Container>
