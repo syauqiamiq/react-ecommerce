@@ -30,7 +30,7 @@ const FooterDesktop = () => {
             </Col>
             <Col lg={3} md={3} sm={6} xs={12} className="p-2">
               <h5 className="footer-menu-title">THE COMPANY</h5>
-              <Link to="/" className="footer-link">
+              <Link to="/about" className="footer-link">
                 {" "}
                 About Us
               </Link>
